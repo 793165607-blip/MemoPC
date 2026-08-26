@@ -4,6 +4,8 @@ out
 dist
 .DS_Store
 *.log
-.env*.local
+.env*
+!.env.dashboard.example
+.dashboard-data/
 next-env.d.ts
 tsconfig.tsbuildinfo

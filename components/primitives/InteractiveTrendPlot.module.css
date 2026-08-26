@@ -1,0 +1,73 @@
+.chart {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  border-radius: 8px;
+  cursor: crosshair;
+}
+
+.chart:focus-visible {
+  outline: 3px solid rgba(96, 165, 250, 0.32);
+  outline-offset: 3px;
+}
+
+.gridLine {
+  stroke: rgba(76, 96, 122, 0.1);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.messageBar { fill: rgba(92, 194, 164, 0.16); }
+
+.activePath,
+.registrationPath {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.activePath { stroke: #4f9de7; stroke-width: 2.3; }
+.registrationPath { stroke: #d0ae67; stroke-width: 1.7; }
+
+.pointerSurface { fill: transparent; pointer-events: all; }
+
+.inspection { pointer-events: none; }
+
+.inspectionLine {
+  stroke: rgba(57, 78, 105, 0.28);
+  stroke-width: 1;
+  stroke-dasharray: 3 4;
+  vector-effect: non-scaling-stroke;
+}
+
+.activeMarker,
+.registrationMarker,
+.messageMarker {
+  stroke: #fff;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.activeMarker { fill: #4f9de7; }
+.registrationMarker { fill: #d0ae67; }
+.messageMarker { fill: #69c7b0; }
+
+.tooltip rect {
+  fill: rgba(38, 49, 63, 0.94);
+  stroke: rgba(255, 255, 255, 0.18);
+}
+
+.tooltip text {
+  fill: rgba(237, 242, 247, 0.75);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 10px;
+}
+
+.tooltip text tspan { fill: #fff; font-weight: 700; }
+.tooltip .tooltipDate { fill: #fff; font-size: 11px; font-weight: 700; }
+
+@media (prefers-reduced-motion: reduce) {
+  .chart { scroll-behavior: auto; }
+}
